@@ -1,0 +1,214 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #3498db; 
+    padding: 20px 0; 
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    border-radius: 10px; 
+}
+
+.nav {
+    display: flex; 
+    justify-content: flex-start; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px; 
+}
+
+.nav-link {
+    color: #3498db; 
+    font-size: 18px;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: #2980b9; 
+    color: white;
+}
+
+.auth-links {
+    display: flex;
+    gap: 15px; 
+    margin-left: auto; 
+}
+
+.auth-links a {
+    background-color: #3498db; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.cocktail-header h1 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cocktail-image img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.cocktail-details {
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 20px; 
+    margin-top: 40px;
+}
+
+.card, .cocktail-image {
+    width: 30%; 
+}
+
+.card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center; 
+    text-transform: uppercase; 
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    color: #555;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px; 
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.card h2 {
+    font-size: 24px;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.card p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.cocktail-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; 
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.cocktail-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.btn-logout, .btn-login, .btn-register {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-logout:hover, .btn-login:hover, .btn-register:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        flex-direction: row;
+        align-items: center;
+        width: 100%; 
+        justify-content: center; 
+    }
+
+    .nav-link {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .auth-links {
+        flex-direction: row; 
+        align-items: center;
+    }
+
+    .cocktail-details {
+        flex-direction: column; 
+    }
+
+    .card, .cocktail-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
