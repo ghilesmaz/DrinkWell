@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: DrinkWell
+    env: php
+    plan: free
+    buildCommand: ""
+    startCommand: php -S 0.0.0.0:8080
+    branch: main
+    rootDir: DrinkWell/DrinkWell
+    healthCheckPath: /
